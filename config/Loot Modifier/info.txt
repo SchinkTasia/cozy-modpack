@@ -1,0 +1,141 @@
+skipped eatable items:-
+golden_apple
+enchanted_golden_apple
+tropical_fish
+pufferfish
+rotten_flesh
+spider_eye
+poisonous_potato
+golden_carrot
+suspicious_stew
+honey_bottle
+
+skipped damageable items:-
+carrot on a stick
+warped on a stick
+golden hoe
+golden shovel
+turtle helmet
+brush
+
+armor removes these items:-
+turtle_helmet
+leather_helmet
+leather_chestplate
+leather_leggings
+leather_boots
+chainmail_helmet
+chainmail_chestplate
+chainmail_leggings
+chainmail_boots
+iron_helmet
+iron_chestplate
+iron_leggings
+iron_boots
+diamond_helmet
+diamond_chestplate
+diamond_leggings
+diamond_boots
+golden_helmet
+golden_chestplate
+golden_leggings
+golden_boots
+netherite_helmet
+netherite_chestplate
+netherite_leggings
+netherite_boots
+shield
+
+ores removes these items:-
+coal_ore
+deepslate_coal_ore
+iron_ore
+deepslate_iron_ore
+copper_ore
+deepslate_copper_ore
+gold_ore
+deepslate_gold_ore
+redstone_ore
+deepslate_redstone_ore
+emerald_ore
+deepslate_emerald_ore
+lapis_ore
+deepslate_lapis_ore
+diamond_ore
+deepslate_diamond_ore
+nether_gold_ore
+nether_quartz_ore
+coal_block
+iron_block
+copper_block
+gold_block
+diamond_block
+netherite_block
+lapis_block
+emerald_block
+redstone_block
+diamond
+iron_ingot
+copper_ingot
+gold_ingot
+netherite_ingot
+gold_nugget
+iron_nugget
+ancient_debris
+
+weapon removes these items:-
+bow
+wooden_sword
+wooden_axe
+stone_sword
+stone_axe
+golden_sword
+golden_axe
+iron_sword
+iron_axe
+diamond_sword
+diamond_axe
+netherite_sword
+netherite_axe
+crossbow
+trident
+
+delete both files if you ran into problems.
+config example:-
+{
+  "foods": true,
+  "damageable": false,
+  "weapon": true,
+  "armor": false,
+  "ore": true,
+
+
+  "blocked items": ["minecraft:diamond","minecraft:apple"],
+  "removed items": ["minecraft:torch","minecraft:shield"],
+
+
+  "add items": [
+  {"item name": "minecraft:diamond" , "weight": 2,"stack min": 2,"stack max": 6},
+  {"item name": "minecraft:torch" , "weight": 2,"stack min": 6,"stack max": 2}
+  ],
+
+  "rolls": { "min": 2,"max": 5}
+  "bonus rolls": 3;
+
+
+  "remove items loot table":[
+  {"loot table name": "village_plains_house","items":["minecraft:diamond","minecraft:torch"]},
+  {"loot table name": "abandoned_mineshaft","items":["minecraft:apple","minecraft:diamond"]}
+  ],
+
+
+  //don't leave any thing just like the example
+  "add items loot table":[
+  {"loot table name": "abandoned_mineshaft","rolls min":2,"rolls max":4,"bonus rolls":0,"items":[{"item name": "minecraft:diamond" , "weight": 2,"stack min": 2,"stack max": 6},{"item name": "minecraft:torch" , "weight": 2,"stack min": 6,"stack max": 2}]},
+  {"loot table name": "village_plains_house","rolls min":1,"rolls max":6,"bonus rolls":1,"items":[{"item name": "minecraft:apple" , "weight": 2,"stack min": 2,"stack max": 6},{"item name": "minecraft:diamond" , "weight": 2,"stack min": 0,"stack max": 0}]}
+  ],
+
+
+  //put the name of the loot tables you want to skip their modification, here other village_plains_house and other examples won't be modified.
+  "skipped loot tables": ["village_plains_house","others example"]
+}

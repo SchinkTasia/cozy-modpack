@@ -49,3 +49,9 @@ servers.dat
 servers.dat_old
 usercache.json
 usernamecache.json
+/local
+/rhino.local.properties
+/automodpack
+/global_packs
+/kiwipacks
+/kubejs

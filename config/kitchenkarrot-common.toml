@@ -1,7 +1,7 @@
 
 #Common Configs for KitchenKarrot
 ["Canned Food Settings"]
-	#Whether or not an empty can entity spawns everytime player finished eating a canned food.
+	#Whether an empty can entity spawns everytime player finished eating a canned food.
 	"Spawn Empty Can Entity" = true
 	#The maximum time in seconds an empty can entity can live.
 	#10 by default, -1 to prevent disappearing.
@@ -21,4 +21,17 @@
 	#Turn the blacklist above into a whitelist.Only the given effects will be applied.
 	#False by default.
 	"Whitelist Mode" = false
+
+["Alcohol Settings"]
+	#Determines the maximum level the tipsy effect can reach. Each level decreases 5% movement speed and increases 5% attack damage.
+	#Upon reaching anywhere higher than the maximum level will turn the current effects into harmful ones.
+	#3 by default.
+	"Maximum Tipsy Level" = 3
+	#The duration in ticks of the drunk state effects (except nausea).
+	#1200 ticks (60 seconds) by default.
+	"Wasted State Duration" = 1200
+	#The effects to be applied when the entity gets drunk.
+	"Wasted State Effects" = ["minecraft:weakness", "minecraft:slowness", "minecraft:hunger"]
+	#The level of each effect of the drunk state. Each number represents the real level appeared in game. This list should be as long as the previous one.
+	"Wasted State Effects Duration" = ["3", "3", "3"]
 
